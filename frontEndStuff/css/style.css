@@ -50,3 +50,23 @@
   margin-top: 15px;
 }
 
+
+
+ul {
+  overflow: hidden;
+  max-height: 670px;
+ }
+
+ li {
+   display: inline;
+   max-height: 670px;
+ }
+
+ .parent {
+   position: relative;
+ }
+
+ .child {
+   position: absolute;
+   width: 75%;
+ }
