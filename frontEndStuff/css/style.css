@@ -25,10 +25,48 @@
 }
 
 #textBox {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   margin: 0 auto;
   align-content: center;
 
 }
+
+.scrollBar {
+  overflow: auto;
+}
+
+.userPost {
+  height: 670px;
+}
+
+.sideCard {
+  height: 800px;
+  text-align: center;
+}
+
+#messageBtn {
+  margin-top: 15px;
+}
+
+
+
+ul {
+  overflow: hidden;
+  max-height: 670px;
+ }
+
+ li {
+   display: inline;
+   max-height: 670px;
+ }
+
+ .parent {
+   position: relative;
+ }
+
+ .child {
+   position: absolute;
+   width: 75%;
+ }
