@@ -1,0 +1,82 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#userLogo {
+  text-align: center;
+  padding-right: 400px;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#textBox {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  align-content: center;
+
+}
+
+.scrollBar {
+  overflow: auto;
+}
+
+.userPost {
+  height: 670px;
+}
+
+.sideCard {
+  height: 800px;
+  text-align: center;
+}
+
+#messageBtn {
+  margin-top: 15px;
+}
+
+
+
+ul {
+  overflow: hidden;
+  max-height: 670px;
+ }
+
+ li {
+   display: inline;
+   max-height: 670px;
+ }
+
+ .parent {
+   position: relative;
+ }
+
+ .child {
+   position: absolute;
+   width: 75%;
+ }
+ 
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
