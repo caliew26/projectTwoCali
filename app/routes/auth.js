@@ -21,7 +21,7 @@ module.exports = function(app, passport) {
  
     app.get('/dashboard', isLoggedIn, authController.dashboard);
  
- 
+    app.get('/home', authController.home);
  
     app.get('/logout', authController.logout);
  
@@ -46,3 +46,4 @@ module.exports = function(app, passport) {
     }
  
 }
+
