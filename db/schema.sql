@@ -1,5 +1,5 @@
-CREATE DATABASE GamerDB;
-USE GamerDB;
+CREATE DATABASE sequelize_passport;
+USE sequelize_passport;
 
 CREATE TABLE Users(
 'user_id' int(20) NOT NULL AUTO_INCREMENT,

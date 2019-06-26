@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html>
  
-<head>
-    <title></title>
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+        <title>GamersMingle</title>
+      
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      </head>
  
-<body>
-    <form id="signup" name="signup" method="post" action="/signup">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="email" />
-        <label for="firstname">Firstname</label>
-        <input name="firstname" type="text" />
-        <label for="lastname">Lastname</label>
-        <input name="lastname" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign Up" />
-    </form>
+    <body>
+        <body class = "grey lighten-2">
+            <nav class="purple darken-2" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">GamersMingle</a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- <li id='userLogo'>Welcome, <span id='userNameText'></span></li> -->
+                    <li><a href='userHomePage.html'>Home</a></li>
+                    <li><a href='#'>Friend</a></li>
+                    <li><a href='#'>Game</a></li>
+                </ul>
+            
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Friend</a></li>
+                    <li><a href='#'>Game</a></li>
+                    
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+
+            <div class="main">
+            <form id="signup" name="signup" method="post" action="/signup">
+                <i class="material-icons prefix">account_circle</i>
+                <input placeholder="UserName" name="userName"id="userName" type="text" class="userName">
+                <label for="userName"></label>
+
+                <i class="material-icons prefix">email</i>
+                <label for="email">Email Address</label>
+                <input class="text" name="email" type="email" placeholder="email"/>
+
+                <i class="material-icons prefix">face</i>
+                <label for="firstname">Firstname</label>
+                <input name="firstname" type="text" />
+
+                <i class="material-icons prefix">face</i>
+                <label for="lastname">Lastname</label>
+                <input name="lastname" type="text" />
+
+                <i class="material-icons prefix">create</i>
+                <label for="password">Password</label>
+                <input name="password" type="password" />
+                <input class="btn purple darken-2" type="submit" value="Sign Up" />
+            </form>
  
-</body>
+        </div>
+
+        <footer class="page-footer purple darken-2">
+            <div class="footer-copyright">
+                <div class="container">
+                Made by <a href="#">GamersMingle</a>
+                </div>
+            </div>
+        </footer>
+    </body>
  
 </html>
