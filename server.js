@@ -30,13 +30,7 @@ app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
-app.get('/', function (req, res) {
 
-    res.render('index')
-
-
-
-})
 
 
 //For Handlebars
