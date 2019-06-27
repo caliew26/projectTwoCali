@@ -32,6 +32,15 @@ app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
+var syncOptions = { force: false };
+
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
+
+
 
 //Models
 var models = require("./app/models")
