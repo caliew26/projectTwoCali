@@ -33,6 +33,7 @@ app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -46,6 +47,17 @@ console.log(__dirname)
 
 =======
 >>>>>>> 67196e5a3a187bb0d37ac2b5da320f53057cdf2d
+=======
+var syncOptions = { force: false };
+
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
+
+
+>>>>>>> 7b147d7eca4562af9d1558414fc175d038fca269
 
 //Models
 var models = require("./app/models")
