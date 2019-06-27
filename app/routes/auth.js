@@ -2,6 +2,9 @@ var authController = require('../controllers/authcontroller.js');
  
  
 module.exports = function(app, passport) {
+
+   
+    
  
  
     app.get('/signup', authController.signup);
@@ -24,6 +27,8 @@ module.exports = function(app, passport) {
     // app.get('/home', authController.home);
  
     app.get('/logout', authController.logout);
+    //temp
+    // app.get('/index', authController.index);
  
  
     app.post('/signin', passport.authenticate('local-signin', {
@@ -34,6 +39,12 @@ module.exports = function(app, passport) {
  
     ));
  
+    app.get('/', function (req, res) {
+
+        res.render('index')
+    
+
+    })
  
     function isLoggedIn(req, res, next) {
  
