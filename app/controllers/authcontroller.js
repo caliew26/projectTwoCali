@@ -12,6 +12,10 @@ exports.signin = function(req, res) {
  
 }
 
+// exports.home = function(req, res) {
+//     res.render('home');
+// }
+
 exports.dashboard = function(req, res) {
  
     res.render('dashboard');
@@ -25,5 +29,10 @@ exports.logout = function(req, res) {
         res.redirect('/');
  
     });
+
+exports.index = function(req, res) {
+    
+    res.render('index');
+}
  
 }

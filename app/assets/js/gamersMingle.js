@@ -11,7 +11,7 @@ $(document).ready(function(){
         var newPost = {
             post: $("#autocomplete-input").val(),
         }
-        $.ajax("/dashboard", {
+        $.ajax("/api/home/" + id, {
             type: "POST",
             data: newPost
         }).then(

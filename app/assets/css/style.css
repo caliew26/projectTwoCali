@@ -38,11 +38,11 @@
 }
 
 .userPost {
-  height: 70vh;
+  height: 670px;
 }
 
 .sideCard {
-  height: 83vh;
+  height: 800px;
   text-align: center;
 }
 
@@ -71,11 +71,11 @@ ul {
    width: 75%;
  }
  
- /* body {
+ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-} */
+}
 
 main {
   flex: 1 0 auto;
