@@ -12,9 +12,9 @@ exports.signin = function(req, res) {
  
 }
 
-exports.home = function(req, res) {
-    res.render('home');
-}
+// exports.home = function(req, res) {
+//     res.render('home');
+// }
 
 exports.dashboard = function(req, res) {
  
