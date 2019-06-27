@@ -21,6 +21,8 @@ app.use(passport.initialize())
  
 app.use(passport.session()) // persistent login sessions
 
+
+ //For Handlebars
  app.engine('hbs', exphbs({
     defaultLayout: "main",
     extname: '.hbs'
@@ -29,23 +31,6 @@ app.use(passport.session()) // persistent login sessions
 app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
-
-app.get('/', function (req, res) {
-
-    res.render('index')
-
-
-
-})
-
-
-//For Handlebars
-// app.set('views', './app/views')
-// app.engine('hbs', exphbs({
-//     extname: '.hbs'
-// }))
-// app.set('view engine', '.hbs')
-
 
 
 //Models
