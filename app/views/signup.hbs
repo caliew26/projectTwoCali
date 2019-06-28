@@ -1,25 +1,36 @@
-<div class="main">
-    <form id="signup" name="signup" method="post" action="/signup">
-        <i class="material-icons prefix">account_circle</i>
-        <input placeholder="UserName" name="userName" id="userName" type="text" class="userName">
-        <label for="userName"></label>
+<div class="row">
+    <div class="containerSignup">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="center">
+                        {{!-- <img src="assets/person_blue.png" alt="Logo" class="responsive-img valign profile-image-login"
+                            style="width:100px; height:100px; margin-top: 15px"> --}}
+                    </div>
+                    <form id="signup" name="signup" method="post" action="/signup">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="username">User Name</label>
+                        <input placeholder="Enter Here" name="username" type="text" class="username">
 
-        <i class="material-icons prefix">email</i>
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="email" placeholder="email" />
+                        <i class="material-icons prefix">email</i>
+                        <label for="email">Email Address</label>
+                        <input class="text" placeholder="Enter Here" name="email" type="email" placeholder="email" />
 
-        <i class="material-icons prefix">face</i>
-        <label for="firstname">Firstname</label>
-        <input name="firstname" type="text" />
+                        <i class="material-icons prefix">face</i>
+                        <label for="firstname">Firstname</label>
+                        <input placeholder="Enter Here"name="firstname" type="text" />
 
-        <i class="material-icons prefix">face</i>
-        <label for="lastname">Lastname</label>
-        <input name="lastname" type="text" />
+                        <i class="material-icons prefix">face</i>
+                        <label for="lastname">Lastname</label>
+                        <input placeholder="Enter Here" name="lastname" type="text" />
 
-        <i class="material-icons prefix">create</i>
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn purple darken-2" type="submit" value="Sign Up" />
-    </form>
-
+                        <i class="material-icons prefix">create</i>
+                        <label for="password">Password</label>
+                        <input placeholder="Enter Here" name="password" type="password" />
+                        <input class="btn purple darken-2" type="submit" value="Sign Up" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
