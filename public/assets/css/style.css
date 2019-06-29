@@ -46,6 +46,7 @@
   overflow: auto;
   text-align: center;
 }
+
 .topsideCard {
   height: 30vh;
   text-align: center;
@@ -59,7 +60,7 @@
   height: 600px;
 }
 .friendList {
-  height: 285px
+  height: 310px
 }
 
 #messageBtn {
@@ -68,38 +69,38 @@
 }
 
 
-
 ul {
   overflow: hidden;
   max-height: 670px;
  }
 
- li {
+li {
    display: inline;
    max-height: 670px;
  }
 
- .parent {
+.parent {
    position: relative;
  }
 
- .child {
+.child {
    position: absolute;
    width: 75%;
  }
  
+
+
  body {
   font-family: 'Play', sans-serif;
-  color: white;
-  background-image: url("../img/connectwork.png")
-  /* display: flex;
+  display: flex;
   min-height: 100vh;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 main {
   flex: 1 0 auto;
 }
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -125,8 +126,8 @@ main {
 
 nav {
   margin-bottom: 20px;
-}
 
+}
 
 /* everything below is user profile pic */
 
