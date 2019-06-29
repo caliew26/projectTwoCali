@@ -27,6 +27,9 @@ $(document).ready(function(){
 });
 
 
+
+
+
 var PictureUpdate = /** @class */function () {
     function PictureUpdate() {
       this.profile = $('.profile-pic'); //direct parent
