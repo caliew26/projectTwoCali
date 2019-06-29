@@ -21,25 +21,4 @@ $(document).ready(function(){
             }
         );
     });
-
-    // {{!-- need to connect the signin button to the signin page --}}
-
-        // $.ajax({
-        //     type: "POST",
-        //     url: "/api/signin",
-        //     data: ,
-        //     success: function(data){
-        //         console.log("success");
-        //     }
-        // })
-
-        // $.ajax({
-        //     type: "POST",
-        //     url: "/api/signup",
-        //     data:,
-        //     success: function(data){
-        //         console.log("success");
-        //     }
-        // })
-
 });
