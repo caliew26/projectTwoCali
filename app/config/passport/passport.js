@@ -58,6 +58,8 @@ module.exports = function(passport, user) {
  
                         {
                             email: email,
+
+                            // username: username,
  
                             password: userPassword,
  

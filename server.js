@@ -32,8 +32,11 @@ app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 97ef744214c92e3ed3a08099155e5b2d4ff58dc7
 
 //For Handlebars
 // app.set('views', './app/views')
@@ -52,14 +55,18 @@ if (process.env.NODE_ENV === "test") {
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 97ef744214c92e3ed3a08099155e5b2d4ff58dc7
 //Models
 var models = require("./app/models")
 
 
 //Routes
-var authRoute = require('./app/routes/auth.js')(app, passport)
+var authRoute = require('./app/routes/auth.js')(app, passport);
+var newPostApi = require("./app/routes/newPost-api-route")(app);
 
 
 //load passport strategies
