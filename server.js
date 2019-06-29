@@ -9,6 +9,10 @@ const path = require("path")
 
 var app = express()
 
+// access static content from "public directory"
+app.use(express.static(__dirname + '/public'));
+// app.use(express.static(path.join(__dirname,"/public")));
+
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -32,11 +36,6 @@ app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 97ef744214c92e3ed3a08099155e5b2d4ff58dc7
 
 //For Handlebars
 // app.set('views', './app/views')
@@ -55,11 +54,6 @@ if (process.env.NODE_ENV === "test") {
 }
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 97ef744214c92e3ed3a08099155e5b2d4ff58dc7
 //Models
 var models = require("./app/models")
 
