@@ -39,15 +39,32 @@
 
       <div class="row">
         <div class="col s12">
-          <div class="card purple darken-1 topsideCard">
-            <div class="card-content white-text">
-              
-              <img class="materialboxed responsive-img circle" width="150" height="150" style="margin: 0 auto;" src="img/php-duck.jpg">
-              <hr> 
-              <h4>UserName</h4>
+          <div class="pictureContainer">
+            <div class="profile small">
+              <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/sterling-davis-513079-unsplash.jpg"/>
+                <div class="layer">
+                  <div class="loader"></div>
+                </div><a class="image-wrapper" href="#">
+                  <form id="coverForm" action="#">
+                    <input class="hidden-input" id="changeCover" type="file"/>
+                    <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+                  </form></a>
+              </div>
+              <div class="user-info">
+                <div class="profile-pic"><img src="img/php-duck.jpg"/>
+                  <div class="layer">
+                    <div class="loader"></div>
+                  </div><a class="image-wrapper" href="#">
+                    <form id="profilePictureForm" action="#">
+                      <input class="input" id="changePicture" type="file"/>
+                      <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+                    </form></a>
+                </div>
+                <div class="username">
+                  <div class="userName"><span class="verified"></span>Quack</div>
+                </div>
+              </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -273,6 +290,7 @@
 
 
   <!--  Scripts-->
+  <script src="js/gamersMingle.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
