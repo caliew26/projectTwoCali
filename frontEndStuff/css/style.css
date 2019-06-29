@@ -64,6 +64,7 @@
 
 #messageBtn {
   margin-top: 15px;
+  width: 15%
 }
 
 
@@ -90,6 +91,7 @@ ul {
  body {
   font-family: 'Play', sans-serif;
   color: white;
+  background-image: url("../img/connectwork.png")
   /* display: flex;
   min-height: 100vh;
   flex-direction: column; */
@@ -97,4 +99,30 @@ ul {
 
 main {
   flex: 1 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #494949; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+
+nav {
+  margin-bottom: 20px;
 }
