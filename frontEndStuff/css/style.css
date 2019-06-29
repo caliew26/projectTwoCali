@@ -15,11 +15,11 @@
 
 #userLogo {
   text-align: center;
-  padding-right: 400px;
+  padding-right: 100px;
 }
 
 .page-footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
 }
@@ -42,8 +42,24 @@
 }
 
 .sideCard {
-  height: 83vh;
+  height: 800px;
+  overflow: auto;
   text-align: center;
+}
+.topsideCard {
+  height: 30vh;
+  text-align: center;
+}
+.bottomsideCard {
+  height: 45vh;
+  text-align: center;
+}
+
+.gameList {
+  height: 600px;
+}
+.friendList {
+  height: 310px
 }
 
 #messageBtn {
@@ -71,11 +87,13 @@ ul {
    width: 75%;
  }
  
- /* body {
-  display: flex;
+ body {
+  font-family: 'Play', sans-serif;
+  color: white;
+  /* display: flex;
   min-height: 100vh;
-  flex-direction: column;
-} */
+  flex-direction: column; */
+}
 
 main {
   flex: 1 0 auto;
