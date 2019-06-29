@@ -33,16 +33,12 @@ app.set("views", path.join(__dirname, "app/views"))
 console.log(__dirname)
 
 
-
-
-
 //For Handlebars
 // app.set('views', './app/views')
 // app.engine('hbs', exphbs({
 //     extname: '.hbs'
 // }))
 // app.set('view engine', '.hbs')
-
 
 
 var syncOptions = { force: false };
@@ -52,8 +48,6 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
-
-
 
 
 //Models
