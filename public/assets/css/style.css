@@ -18,8 +18,8 @@
   padding-right: 100px;
 }
 
-.page-footer {
-  position: static;
+footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -38,7 +38,7 @@
 }
 
 .userPost {
-  height: 70vh;
+  height: 67vh;
 }
 
 .sideCard {
@@ -92,9 +92,9 @@ li {
 
  body {
   font-family: 'Play', sans-serif;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  /* display: flex; */
+  /* min-height: 100vh; */
+  /* flex-direction: column; */
 }
 
 main {
