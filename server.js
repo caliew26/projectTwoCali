@@ -9,6 +9,13 @@ const path = require("path")
 
 var app = express()
 
+// access static content from "public directory"
+
+// app.use(express.static(path.join(__dirname, '/public'));
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'static')));
+// app.use(express.static(path.join(__dirname,"/public")));
+
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -29,7 +36,7 @@ app.use(passport.session()) // persistent login sessions
  }))
 
 app.set("view engine", "hbs")
-app.set("views", path.join(__dirname, "app/views"))
+app.set("views", path.join(__dirname, "views"))
 console.log(__dirname)
 
 
@@ -51,16 +58,16 @@ if (process.env.NODE_ENV === "test") {
 
 
 //Models
-var models = require("./app/models")
+var models = require("./models")
 
 
 //Routes
-var authRoute = require('./app/routes/auth.js')(app, passport);
-var newPostApi = require("./app/routes/newPost-api-route")(app);
+var authRoute = require('./routes/auth.js')(app, passport);
+var newPostApi = require("./routes/newPost-api-route")(app);
 
 
 //load passport strategies
-require('./app/config/passport/passport.js')(passport, models.user)
+require('./config/passport/passport.js')(passport, models.user)
  
 
 //Sync Database

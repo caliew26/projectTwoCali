@@ -18,8 +18,8 @@
   padding-right: 100px;
 }
 
-.page-footer {
-  position: static;
+footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -38,7 +38,7 @@
 }
 
 .userPost {
-  height: 70vh;
+  height: 67vh;
 }
 
 .sideCard {
@@ -46,6 +46,7 @@
   overflow: auto;
   text-align: center;
 }
+
 .topsideCard {
   height: 30vh;
   text-align: center;
@@ -59,7 +60,7 @@
   height: 600px;
 }
 .friendList {
-  height: 285px
+  height: 310px
 }
 
 #messageBtn {
@@ -68,38 +69,38 @@
 }
 
 
-
 ul {
   overflow: hidden;
   max-height: 670px;
  }
 
- li {
+li {
    display: inline;
    max-height: 670px;
  }
 
- .parent {
+.parent {
    position: relative;
  }
 
- .child {
+.child {
    position: absolute;
    width: 75%;
  }
  
+
+
  body {
   font-family: 'Play', sans-serif;
-  color: white;
-  background-image: url("../img/connectwork.png")
-  /* display: flex;
-  min-height: 100vh;
-  flex-direction: column; */
+  /* display: flex; */
+  /* min-height: 100vh; */
+  /* flex-direction: column; */
 }
 
 main {
   flex: 1 0 auto;
 }
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -125,8 +126,8 @@ main {
 
 nav {
   margin-bottom: 20px;
-}
 
+}
 
 /* everything below is user profile pic */
 
@@ -173,7 +174,7 @@ nav {
 }
 .profile {
   *zoom: 1;
-  background-color:purple;
+
   border-radius: 2px;
   display: block;
   float: none;
@@ -286,9 +287,7 @@ nav {
 .user-info:after {
   clear: both;
 }
-body {
-  background-color: #202020;
-}
+
 .pictureContainer {
   max-width: 960px;
 }
