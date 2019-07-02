@@ -2,13 +2,13 @@
  
     "development": {
  
-        "username": "root",
+        "username": "zvgzq7p7y3vuuxuz",
  
-        "password": "pass",
+        "password": "nkla8vcm7mnzh4kc",
  
-        "database": "sequelize_passport",
+        "database": "mmfurh9vq28wr9zd",
  
-        "host": "127.0.0.1",
+        "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
  
         "dialect": "mysql"
  
