@@ -13,6 +13,11 @@
 	font-size: inherit;
 }
 
+#gamePreview {
+  height: 50px;
+  width: 250px;
+}
+
 #userLogo {
   text-align: center;
   padding-right: 100px;
