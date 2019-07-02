@@ -82,8 +82,13 @@
         <div class="card grey darken-1 userPost">
           <div class="card-content white-text">
             <ul class="chatBox child " style="width: 85%; height: 90%; overflow: auto">
+
               <li><strong id="userName">Pengu</strong><br><span id="userPost">Hello</span>
                 <hr><br></li>
+                {{#each newPost}}
+                {{this.body}}
+
+                {{/each}}
 
             </ul>
 
@@ -96,15 +101,15 @@
     </div>
 
 
-    <div class="container" id="textBox">
+    <form class="container" id="textBox">
 
 
       <div class="col s12 middle ">
         <div class="row card grey darken-1">
           <div class="input-field col s10">
             <i class="material-icons prefix">textsms</i>
-            <input type="text" id="autocomplete-input" class="autocomplete" data-length="255">
-            <label for="autocomplete-input">Message<span></span></label>
+            <input type="text" id="body" class="autocomplete" data-length="255">
+            <label for="body">Message<span></span></label>
 
 
           </div>
@@ -112,10 +117,11 @@
             name="action">Submit
             <i class="material-icons right">send</i>
           </button>
+
         </div>
       </div>
 
-    </div>
+    </form>
 
 
   </div>
@@ -180,3 +186,31 @@
 </div>
 
 <div class="col s2"></div>
+{{!-- 
+<script>
+  $(document).ready(function(){
+
+    //Container that holds all of the users posts
+    var postContainer = $(".postContainer");
+    //edit user's post
+    // $(document).on("click", "button.edit", handlePostEdit);
+    
+
+    $("#textBox").on("submit", function(event) {
+        console.log("clicked")
+        event.preventDefault();
+        var newPost = {
+            post: $("#autocomplete-input").val().trim(),
+        }
+        $.ajax("/dashboard" , {
+            type: "POST",
+            data: newPost
+        }).then(
+            function() {
+                console.log("User's Posted");
+                location.reload();
+            }
+        );
+    });
+});
+</script> --}}

@@ -7,18 +7,32 @@ $(document).ready(function(){
     
 
     $("#textBox").on("submit", function(event) {
+        console.log("clicked")
         event.preventDefault();
         var newPost = {
-            post: $("#autocomplete-input").val(),
+            body: $("#body").val(),
         }
-        $.ajax("/dashboard" , {
+        $.ajax("/api/newpost" , {
             type: "POST",
             data: newPost
         }).then(
-            function() {
+            function(stuff) {
+                console.log(stuff);
+                console.log(newPost);
+                
+                
                 console.log("User's Posted");
                 location.reload();
+                $.ajax("/api/newpost", {
+                    type: "GET",
+                    
+                }).then(data => {
+                    console.log(data);
+                    
+                })
             }
         );
+
+
     });
 });
