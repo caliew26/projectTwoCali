@@ -143,6 +143,10 @@
                 <label for="addGameLink">Author</label>
                 <input placeholder="Game URL" id="gameLink" type="text" class="validate">
                 <label for="addGameLink">Game's Link</label>
+                <br><br>
+                
+                <input class="input" id="gamePreview" type="file" />
+                <label for="gamePreview">(Optional) Game Preview</label>
                 <hr>
 
                 <button class="btn waves-effect waves-light purple darken-2 col s2" id="addGame" type="submit"
@@ -161,9 +165,10 @@
             <input type="text" id="searchGame" placeholder="Search..">
             <div class="gameList scrollBar left-align">
 
-              <a href="https://lov3tt.github.io/soloTetris/" target="_blank"><img id="gamePreview"
+              <a id="gameLink" href="https://lov3tt.github.io/soloTetris/" target="_blank"><img id="gamePreview"
                   src="https://s3.amazonaws.com/tetris-www/assets/article/2017/06/14/tetris-lingo-feature_feature.jpg"><span
                   id="gameName">Tetris</span></a>
+              <p>Author: <span id="Author">GamersMingle</span></p>
 
 
 
