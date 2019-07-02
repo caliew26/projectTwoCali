@@ -18,6 +18,10 @@
   width: 250px;
 }
 
+#gameLink {
+  margin: 0 auto;
+}
+
 #userLogo {
   text-align: center;
   padding-right: 100px;
