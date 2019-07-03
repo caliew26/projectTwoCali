@@ -1,3 +1,5 @@
+var db = require("../models");
+
 var exports = module.exports = {}
  
 exports.signup = function(req, res) {
@@ -17,10 +19,14 @@ exports.signin = function(req, res) {
 // }
 
 exports.dashboard = function(req, res) {
+    db.newPost.findAll()
+      .then(function(data){
+        
+        res.render('dashboard', {newPost:data});
+    })
+};
  
-    res.render('dashboard');
  
-}
 
 exports.logout = function(req, res) {
  

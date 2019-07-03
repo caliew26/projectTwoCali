@@ -13,30 +13,31 @@ module.exports = function(app){
         });
     });
     //single post
-    app.get("/api/newpost/:id", function(req, res) {
-        db.newPost.findOne({where: {id: req.params.id}, include: [db.user]}).then(function(dbnewPost) {
-          res.json(dbnewPost);
-        });
-      });
+    // app.get("/api/newpost/:id", function(req, res) {
+    //     db.newPost.findOne({where: {id: req.params.id}, include: [db.user]}).then(function(dbnewPost) {
+    //       res.json(dbnewPost);
+    //     });
+    //   });
     //delete post
-      app.delete("/api/newpost/:id", function(req, res) {
-        db.newPost.destroy({where: {id: req.params.id}}).then(function(dbnewPost) {
-          res.json(dbnewPost);
-        });
-      });
+      // app.delete("/api/newpost/:id", function(req, res) {
+      //   db.newPost.destroy({where: {id: req.params.id}}).then(function(dbnewPost) {
+      //     res.json(dbnewPost);
+      //   });
+      // });
 
     //creating post
     app.post("/api/newpost", function(req, res) {
+      console.log(req.body);
         db.newPost.create(req.body).then(function(dbnewPost) {
           res.json(dbnewPost);
         });
       });
 
     //update post
-    app.put("/api/newpost", function(req, res) {
-        db.newPost.update(
-          req.body,{where: {id: req.body.id}}).then(function(dbnewPost) {
-          res.json(dbnewPost);});
-      });
+    // app.put("/api/newpost", function(req, res) {
+    //     db.newPost.update(
+    //       req.body,{where: {id: req.body.id}}).then(function(dbnewPost) {
+    //       res.json(dbnewPost);});
+    //   });
     
 }
