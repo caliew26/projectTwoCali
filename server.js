@@ -9,6 +9,7 @@ const path = require("path")
 
 var app = express()
 
+var PORT = process.env.PORT || 8080
 // access static content from "public directory"
 
 // app.use(express.static(path.join(__dirname, '/public'));
@@ -82,7 +83,7 @@ models.sequelize.sync().then(function() {
 })
 
 
-app.listen(8080, function (err) {
+app.listen(PORT, function (err) {
 
     if (!err) {
         console.log("Site is live")

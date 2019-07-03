@@ -4,7 +4,7 @@
  
         "username": "root",
  
-        "password": "pass",
+        "password": "password",
  
         "database": "sequelize_passport",
  
@@ -30,10 +30,9 @@
  
     "production": {
 
-        "use_env_variable": "JAWSDB_URL",
+        "use_env_variable": "JAWSDB_URL"
  
-        "dialect": "mysql"
- 
+       
     }
  
 }
