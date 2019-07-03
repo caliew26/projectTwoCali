@@ -35,4 +35,9 @@ $(document).ready(function(){
 
 
     });
+    // <li><strong id="userName">Pengu</strong><br><span id="userPost">Hello</span>
+    // <hr><br></li>
+    // var list = 
+
+
 });
