@@ -10,7 +10,7 @@ $(document).ready(function(){
         console.log("clicked")
         event.preventDefault();
         var newPost = {
-            body: $("#body").val(),
+            body: $("#body").val().trim(),
         }
         $.ajax("/api/newpost" , {
             type: "POST",
